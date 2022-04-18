@@ -1,0 +1,70 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.container .infoTodo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 2px 2px 3px #e0e0e0;
+          box-shadow: 2px 2px 3px #e0e0e0;
+  border-radius: 5px;
+}
+
+.container .infoTodo h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #eee;
+  padding: 10px;
+}
+
+.container .infoTodo button {
+  margin: 6px;
+  padding: 8px 16px;
+  background-color: #e18e1a;
+  border: none;
+  border-radius: 50px;
+  font-weight: bolder;
+  -webkit-box-shadow: 3px 3px 5px #000;
+          box-shadow: 3px 3px 5px #000;
+}
+
+.container .infoTodo button:active {
+  -webkit-box-shadow: 2px 2px 1px #000;
+          box-shadow: 2px 2px 1px #000;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+@media (max-width: 789px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .container h1 {
+    font-size: 1.1rem;
+  }
+}
+/*# sourceMappingURL=todosBox.module.css.map */

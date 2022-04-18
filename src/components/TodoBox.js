@@ -18,7 +18,7 @@ const TodoBox = () => {
         <button onClick={() => dispatch({type:"CLEAR"})}>Clear</button>
 
       </div>
-      <div>
+      <div className={styles.todoItem}>
         {todo.todos.map((todo) => (
           <Todo todo={todo} key={todo.text}/>
         ))}

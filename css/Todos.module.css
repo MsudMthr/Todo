@@ -1,0 +1,227 @@
+.container {
+  height: 100vh;
+}
+
+.container .writeTodo {
+  height: 30%;
+  background: url("../../assets/images/nature.jpg") no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.container .writeTodo .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .writeTodo .header h1 {
+  font-size: 4rem;
+  font-family: cursive;
+  color: #65896a;
+  text-shadow: 5px 5px 5px  #000;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.container .writeTodo .header .inputBox {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .writeTodo .header .inputBox input {
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 5px #000;
+          box-shadow: 1px 1px 5px #000;
+  border-radius: 10px 0 0 10px;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  font-size: large;
+}
+
+.container .writeTodo .header .inputBox button {
+  border-radius: 0 10px 10px 0;
+  -webkit-box-shadow: 1px 1px 5px #000;
+          box-shadow: 1px 1px 5px #000;
+  border: none;
+  padding: 15px;
+  font-family: cursive;
+  font-weight: 700;
+}
+
+.container .writeTodo .header .inputBox button:active {
+  -webkit-box-shadow: 0.5px 0.5px 3px rgba(66, 66, 66, 0.545);
+          box-shadow: 0.5px 0.5px 3px rgba(66, 66, 66, 0.545);
+}
+
+.container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  width: 100%;
+}
+
+.container .box .todos {
+  width: 80vw;
+  background: #eee;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 10px 10px #969696;
+          box-shadow: 1px 10px 10px #969696;
+  max-height: 60vh;
+  overflow: auto;
+}
+
+.container .box .todos::-webkit-scrollbar {
+  width: 20px;
+}
+
+.container .box .todos::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.container .box .todos::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+.container .box .todos::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+@media (max-width: 789px) {
+  .container .writeTodo {
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .writeTodo .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+  }
+  .container .writeTodo .header h1 {
+    font-size: 4rem;
+    font-family: cursive;
+    color: #65896a;
+    text-shadow: 5px 5px 5px  #000;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  .container .writeTodo .header .inputBox {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .writeTodo .header .inputBox input {
+    width: 80%;
+    -webkit-box-shadow: 1px 1px 5px #000;
+            box-shadow: 1px 1px 5px #000;
+    border-radius: 10px 0 0 10px;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    font-size: large;
+  }
+  .container .writeTodo .header .inputBox button {
+    border-radius: 0 10px 10px 0;
+    -webkit-box-shadow: 1px 1px 5px #000;
+            box-shadow: 1px 1px 5px #000;
+    border: none;
+    padding: 15px;
+    font-family: cursive;
+    font-weight: 700;
+  }
+  .container .writeTodo .header .inputBox button:active {
+    -webkit-box-shadow: 0.5px 0.5px 3px rgba(66, 66, 66, 0.545);
+            box-shadow: 0.5px 0.5px 3px rgba(66, 66, 66, 0.545);
+  }
+  .container .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    width: 100%;
+    padding: 0 10px;
+  }
+  .container .box .todos {
+    width: 100vw;
+    background: #eee;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 1px 10px 10px #969696;
+            box-shadow: 1px 10px 10px #969696;
+    min-height: 40vh;
+  }
+}
+/*# sourceMappingURL=Todos.module.css.map */

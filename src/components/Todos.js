@@ -25,7 +25,7 @@ const Todos = () => {
     }
   };
 
-  console.log(todo);
+  
 
   return (
     <div className={styles.container}>

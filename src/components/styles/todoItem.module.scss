@@ -1,27 +1,63 @@
+.checked {
+    p {
+        text-decoration: line-through;
+        transition: .3s all;
+
+    }
+    border: 2px solid rgba(194, 194, 194, 0.36) !important;
+    transition: .3s all;
+
+    
+}
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0;
+    margin: 10px;
     border: 2px solid rgb(145, 145, 145);
     padding: 5px 10px;
     border-radius: 10px;
-
+    
+    
+    
     p {
         font-weight: 700; 
         font-size: 1.3rem;
         text-transform: capitalize;
 
     }
+    .buttons{
+        display: flex;
+        gap: 10px;
+        button {
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            padding: 3px 6px;
 
-    button {
-        border: none;
-        box-shadow: 1px 1px 3px rgba(172, 40, 40, 0.551);
-        background: rgb(255, 0, 0);
-        border-radius: 50px;
-        font-weight: 700;
-        padding: 3px 6px;
-    }
+            &:nth-child(1) {
+                box-shadow: 1px 1px 3px rgba(172, 40, 40, 0.551);
+                background: rgb(255, 0, 0);
+                box-shadow: 3px 3px 5px #000;
+                &:active {
+                box-shadow: 2px 2px 1px #000;
+                    transition: .3s all;
+
+                }
+
+            }
+            &:nth-child(2) {
+                box-shadow: 1px 1px 3px rgba(8, 208, 21, 0.551);
+                background: rgb(16, 213, 9);
+                box-shadow: 3px 3px 5px #000;
+                &:active {
+                box-shadow: 2px 2px 1px #000;
+                    transition: .3s all;
+
+                }
+
+            }
+    }}
 }
 
 @media (max-width:789px) {
@@ -51,3 +87,4 @@
 }
 
 }
+

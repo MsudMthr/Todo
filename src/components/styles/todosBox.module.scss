@@ -22,10 +22,15 @@
         button {
             margin: 6px;
             padding: 8px 16px ;
-            background-color: aquamarine;
+            background-color: rgb(225, 142, 26);
             border: none;
             border-radius: 50px;
-            font-weight: 700;
+            font-weight: bolder ;
+            box-shadow: 3px 3px 5px #000;
+                &:active {
+                    box-shadow: 2px 2px 1px #000;
+                    transition: .3s all;
+                }
         }
 
     }

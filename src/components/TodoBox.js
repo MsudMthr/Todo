@@ -15,12 +15,12 @@ const TodoBox = () => {
         work to do : <span>{todo.todosCount}</span>
       </h1>
 
-        <button>Clear</button>
+        <button onClick={() => dispatch({type:"CLEAR"})}>Clear</button>
 
       </div>
       <div>
         {todo.todos.map((todo) => (
-          <Todo todo={todo} />
+          <Todo todo={todo} key={todo.text}/>
         ))}
       </div>
     </div>

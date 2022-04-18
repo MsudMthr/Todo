@@ -1,0 +1,153 @@
+.container {
+    height: 100vh;
+    
+    .writeTodo {
+        height: 30%;
+        background: url("../../assets/images/nature.jpg")  no-repeat;
+        background-size: cover;
+        background-position:100% 100% ;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        
+
+        .header {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            
+            h1 {
+                font-size: 4rem;
+                font-family: cursive;
+                color: rgb(101, 137, 106);
+                text-shadow: 5px 5px 5px  #000;
+                transform: translateY(30px);
+            }
+    
+            .inputBox {
+                transform: translateY(50%);
+                display: flex ;
+                justify-content: center;
+                
+                input {
+                    width: 100%;
+                    box-shadow: 1px 1px 5px #000;
+                    border-radius: 10px 0 0 10px;
+                    padding: 1rem 2rem;
+                    border: none;
+                    outline: none;
+                    font-size: large; 
+                }
+                button {
+                    border-radius: 0 10px 10px 0;
+                    box-shadow: 1px 1px 5px #000;
+                    border: none;
+                    padding: 15px;
+                    font-family: cursive;
+                    font-weight: 700;
+                    &:active {
+                        box-shadow: .5px .5px 3px rgba(66, 66, 66, 0.545);                                                                                        
+                    }
+                }
+            }
+        }
+    }
+
+    .box { 
+        display: flex ;
+        justify-content: center ;
+        align-items: center;
+        transform: translateY(50px);
+        width: 100%;
+        
+        .todos {
+            width: 80vw;
+            background: #eee;
+            border-radius: 10px; 
+            // padding: 10px;
+            box-shadow:  1px 10px 10px rgb(150, 150, 150);
+            max-height: 60vh;
+            overflow: auto;
+            
+        }
+    }
+}
+
+@media (max-width:789px) {
+    .container {
+        
+        .writeTodo {
+            height: 40%;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            
+    
+            .header {
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: center;
+                width: 80%;
+
+                
+                h1 {
+                    font-size: 4rem;
+                    font-family: cursive;
+                    color: rgb(101, 137, 106);
+                    text-shadow: 5px 5px 5px  #000;
+                    transform: translateY(30px);
+                }
+        
+                .inputBox {
+                    transform: translateY(50%);
+                    display: flex ;
+                    justify-content: center;
+                    
+                    input {
+                        width: 80%;
+                        box-shadow: 1px 1px 5px #000;
+                        border-radius: 10px 0 0 10px;
+                        padding: 1rem 2rem;
+                        border: none;
+                        outline: none;
+                        font-size: large; 
+                    }
+                    button {
+                        border-radius: 0 10px 10px 0;
+                        box-shadow: 1px 1px 5px #000;
+                        border: none;
+                        padding: 15px;
+                        font-family: cursive;
+                        font-weight: 700;
+                        &:active {
+                            box-shadow: .5px .5px 3px rgba(66, 66, 66, 0.545);                                                                                        
+                        }
+                    }
+                }
+            }
+        }
+    
+        .box { 
+            display: flex ;
+            justify-content: center ;
+            align-items: center;
+            transform: translateY(50px);
+            width: 100%;
+            padding:0 10px;
+            .todos {
+                width: 100vw;
+                background: #eee;
+                border-radius: 10px; 
+                padding: 10px;
+                box-shadow:  1px 10px 10px rgb(150, 150, 150);
+                min-height: 40vh;
+            }
+        }
+    }
+}

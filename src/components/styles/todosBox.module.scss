@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .infoTodo {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 2px 2px 3px rgb(224, 224, 224);
+        border-radius: 5px;
+        h1 {
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            position: sticky;
+            top: 0;
+            background-color: #eee;
+            padding: 10px ;
+        }  
+
+        button {
+            margin: 6px;
+            padding: 8px 16px ;
+            background-color: aquamarine;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+        }
+
+    }
+}
+
+@media (max-width:789px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    
+        h1 {
+            font-size: 1.1rem;
+            
+        }    
+    }
+}
+

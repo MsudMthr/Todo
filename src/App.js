@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+//styles
+import styles from "./App.module.scss";
+import TodoContextProvider from "./context/TodoContextProvider";
+//components
+import Todos from "./components/Todos";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TodoContextProvider>
+      <div className={styles.App}>
+        <Todos />
+      </div>
+    </TodoContextProvider>
   );
 }
 
